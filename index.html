@@ -14,13 +14,13 @@
 
 </head>
 
-<body class="bg-white">
-    <h1> Welcome to the geometry-calculator </h1>
-    <p>geometry-practise</p>
-    <div id="geometry-part" class="grid grid-cols-3">
+<body class="bg-slate-300">
+    <h1 class="font-extrabold text-center text-red-600 bg-slate-400"> Welcome to the geometry-calculator </h1>
+    <p class="font-bold text-center text-yellow-500 bg-slate-500">geometry-practise</p>
+    <div id="geometry-part" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 border-4 border-black">
 
     <!--Circle-->
-        <div class="card bg-base-100 image-full w-96 shadow-xl">
+        <div class="card bg-base-100 image-full w-96 shadow-xl bg-red-100 border-2 border-red-600">
             <figure>
               <img
                 src="images/circle.png"
@@ -28,14 +28,16 @@
             </figure>
             <div class="card-body">
               <h2 class="card-title">CIrcle!</h2>
-              <p>Area = π * r^2</p>
+              <p>Area (A) = π * r^2</p>
+              <input  type="number" placeholder="Give the radius here...">
+              <p>Area: </p>
               <div class="card-actions justify-end">
-                <button class="btn btn-info">Calculate Area</button>
+                <button class="btn btn-info bg-blue-400 p-2 rounded-xl font-bold">Calculate Area</button>
               </div>
             </div>
           </div>
     <!--Triangle-->
-          <div class="card bg-base-100 image-full w-96 shadow-xl">
+          <div class="card bg-base-100 image-full w-96 shadow-xl bg-red-100 border-2 border-red-600">
             <figure>
               <img
                 src="images/triangle.png"
@@ -43,29 +45,32 @@
             </figure>
             <div class="card-body">
               <h2 class="card-title">Triangle!</h2>
-              <p>Area = 0.5 X b X h</p>
+              <p>Area (A) = 0.5 X b X h</p>
+              <input  type="number" placeholder="Give the base here...">
+              <input  type="number" placeholder="Give the hight here...">
+              <p>Area: </p>
               <div class="card-actions justify-end">
-                <button class="btn btn-primary">Calculate Area</button>
+                <button class="btn btn-info bg-blue-400 p-2 rounded-xl font-bold">Calculate Area</button>
               </div>
             </div>
           </div>
     <!--Rectangle-->
-          <div class="card bg-base-100 image-full w-96 shadow-xl">
+          <div class="card bg-base-100 image-full w-96 shadow-xl bg-red-100 border-2 border-red-600">
             <figure>
               <img
                 src="images/rectangle.png"
                 alt="Rectangle-image" />
             </figure>
             <div class="card-body">
-              <h2 class="card-title">Rectangle-image!</h2>
-              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <h2 class="card-title">Rectangles & Square</h2>
+              <p>Area (A) = w X I</p>
               <div class="card-actions justify-end">
                 <button class="btn btn-primary">Calculate Area</button>
               </div>
             </div>
           </div>
 <!--Parallalogram-->
-          <div class="card bg-base-100 image-full w-96 shadow-xl">
+          <div class="card bg-base-100 image-full w-96 shadow-xl bg-red-100 border-2 border-red-600">
             <figure>
               <img
                 src="images/parallelogram.png"
@@ -73,14 +78,14 @@
             </figure>
             <div class="card-body">
               <h2 class="card-title">Parallelogram!</h2>
-              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <p>Area (A) = b * h</p>
               <div class="card-actions justify-end">
                 <button class="btn btn-primary">Calculate Area</button>
               </div>
             </div>
           </div>
 <!--Rhombus-->
-<div class="card bg-base-100 image-full w-96 shadow-xl">
+<div class="card bg-base-100 image-full w-96 shadow-xl bg-red-100 border-2 border-red-600">
     <figure>
       <img
         src="images/rhombus.png"
@@ -88,14 +93,14 @@
     </figure>
     <div class="card-body">
       <h2 class="card-title">Rhombus!</h2>
-      <p>If a dog chews shoes whose shoes does he choose?</p>
+      <p>Area (A) = (p * q) / 2</p>
       <div class="card-actions justify-end">
         <button class="btn btn-primary">Calculate Area</button>
       </div>
     </div>
   </div>
   <!--Pentagon-->
-          <div class="card bg-base-100 image-full w-96 shadow-xl">
+          <div class="card bg-base-100 image-full w-96 shadow-xl bg-red-100 border-2 border-red-600">
             <figure>
               <img
                 src="/images/pentagon.png"
@@ -103,14 +108,14 @@
             </figure>
             <div class="card-body">
               <h2 class="card-title">Pentagon!</h2>
-              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <p>Area (A) = 0.5 * (p * a)</p>
               <div class="card-actions justify-end">
                 <button class="btn btn-primary">Calculate Area</button>
               </div>
             </div>
           </div>
   <!--Ellipse-->
-          <div class="card bg-base-100 image-full w-96 shadow-xl">
+          <div class="card bg-base-100 image-full w-96 shadow-xl bg-red-100 border-2 border-red-600">
             <figure>
               <img
                 src="/images/ellipse.png"
@@ -118,14 +123,14 @@
             </figure>
             <div class="card-body">
               <h2 class="card-title">Ellipse!</h2>
-              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <p>Area (A) = π * a * b</p>
               <div class="card-actions justify-end">
                 <button class="btn btn-primary">Calculate Area</button>
               </div>
             </div>
           </div>
             <!--Hexagon-->
-            <div class="card bg-base-100 image-full w-96 shadow-xl">
+            <div class="card bg-base-100 image-full w-96 shadow-xl bg-red-100 border-2 border-red-600">
                 <figure>
                   <img
                     src="/images/hexagon..png"
@@ -140,7 +145,7 @@
                 </div>
               </div>
                           <!--Trapezium-->
-            <div class="card bg-base-100 image-full w-96 shadow-xl">
+            <div class="card bg-base-100 image-full w-96 shadow-xl bg-red-100 border-2 border-red-600">
                 <figure>
                   <img
                     src="/images/trapezium.png"
