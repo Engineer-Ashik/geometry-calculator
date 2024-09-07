@@ -1,6 +1,7 @@
 console.log("added successfully");
 
-document.getElementById('triangle-b').addEventListener('click', function triangle() {
+//Triangle button
+document.getElementById('triangle-btn').addEventListener('click', function triangle() {
     //console.log('Button clicked');
     const triInOne = document.getElementById("triangle-x");
     //console.log('Button xxx clicked');
@@ -23,7 +24,7 @@ document.getElementById('triangle-b').addEventListener('click', function triangl
     triText.innerText = area;
 })
 
-//Get Element Code Here
+//Get Element reusable Code Here
 function getElementValues(elementId) {
     const getElementId = document.getElementById(elementId);
     const getElementValue = getElementId.value;
@@ -32,7 +33,7 @@ function getElementValues(elementId) {
     return getElementFloat;
 }
 
-//Set Element Code Here
+//Set Element reusable Code Here
 function setElementValues(elementId, values) {
     const setElement = document.getElementById(elementId);
     const setElementText = setElement.innerText;
@@ -41,8 +42,11 @@ function setElementValues(elementId, values) {
 }
 
 //circle button
-document.getElementById('circle-b').addEventListener('click',function circle(){
+document.getElementById('circle-btn').addEventListener('click',function circle(){
     const circleInput = getElementValues('circle-x');
     const area = (3.1416 * circleInput * circleInput);
     const circleText = setElementValues('circle-text', area);
 })
+
+//Rectangles & Square button
+document.getElementById('')
