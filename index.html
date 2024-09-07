@@ -15,12 +15,16 @@
 </head>
 
 <body class="bg-slate-300">
+  <header>
     <h1 class="font-extrabold text-center text-red-600 bg-slate-400"> Welcome to the geometry-calculator </h1>
     <p class="font-bold text-center text-yellow-500 bg-slate-500">geometry-practise</p>
-    <div id="geometry-part" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 border-4 border-black">
+  </header>
+
+  <main>
+    <div id="geometry-part" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 border-4 border-black">
 
     <!--Circle-->
-        <div class="card bg-base-100 image-full w-96 shadow-xl bg-red-100 border-2 border-red-600">
+        <div class="card bg-base-100 image-full w-auto shadow-xl bg-red-100 border-2 border-red-600">
             <figure>
               <img
                 src="images/circle.png"
@@ -28,8 +32,8 @@
             </figure>
             <div class="card-body">
               <h2 class="card-title">CIrcle!</h2>
-              <p>Area (A) = π * r^2</p>
-              <input  type="number" placeholder="Give the radius here...">
+              <p>Area (A) = π r^2</p>
+              <input  type="number" placeholder="Give the radius here..." class="border-2 border-fuchsia-700">
               <p>Area: </p>
               <div class="card-actions justify-end">
                 <button class="btn btn-info bg-blue-400 p-2 rounded-xl font-bold">Calculate Area</button>
@@ -37,7 +41,7 @@
             </div>
           </div>
     <!--Triangle-->
-          <div class="card bg-base-100 image-full w-96 shadow-xl bg-red-100 border-2 border-red-600">
+          <div class="card bg-base-100 image-full w-auto shadow-xl bg-red-100 border-2 border-red-600">
             <figure>
               <img
                 src="images/triangle.png"
@@ -45,17 +49,17 @@
             </figure>
             <div class="card-body">
               <h2 class="card-title">Triangle!</h2>
-              <p>Area (A) = 0.5 X b X h</p>
-              <input  type="number" placeholder="Give the base here...">
-              <input  type="number" placeholder="Give the hight here...">
-              <p>Area: </p>
+              <p>Area (A) = A = ½(b X h)</p>
+              <input id="triangle-x" type="number" placeholder="Give the base here..." class="border-2 border-fuchsia-700">
+              <input id="triangle-y" type="number" placeholder="Give the hight here..." class="border-2 border-fuchsia-700">
+              <p>Area: <span id="tri-text"> 00 </span> </p>
               <div class="card-actions justify-end">
-                <button class="btn btn-info bg-blue-400 p-2 rounded-xl font-bold">Calculate Area</button>
+                <button id="triangle-b" class="btn btn-info bg-blue-400 p-2 rounded-xl font-bold">Calculate Area</button>
               </div>
             </div>
           </div>
     <!--Rectangle-->
-          <div class="card bg-base-100 image-full w-96 shadow-xl bg-red-100 border-2 border-red-600">
+          <div class="card bg-base-100 image-full w-auto shadow-xl bg-red-100 border-2 border-red-600">
             <figure>
               <img
                 src="images/rectangle.png"
@@ -64,13 +68,16 @@
             <div class="card-body">
               <h2 class="card-title">Rectangles & Square</h2>
               <p>Area (A) = w X I</p>
+              <input type="number" placeholder="Give the width here..." class="border-2 border-fuchsia-700">
+              <input type="number" placeholder="Give the length here..." class="border-2 border-fuchsia-700">
+              <p>Area: </p>
               <div class="card-actions justify-end">
-                <button class="btn btn-primary">Calculate Area</button>
+                <button class="btn btn-info bg-blue-400 p-2 rounded-xl font-bold">Calculate Area</button>
               </div>
             </div>
           </div>
 <!--Parallalogram-->
-          <div class="card bg-base-100 image-full w-96 shadow-xl bg-red-100 border-2 border-red-600">
+          <div class="card bg-base-100 image-full w-auto shadow-xl bg-red-100 border-2 border-red-600">
             <figure>
               <img
                 src="images/parallelogram.png"
@@ -78,14 +85,17 @@
             </figure>
             <div class="card-body">
               <h2 class="card-title">Parallelogram!</h2>
-              <p>Area (A) = b * h</p>
+              <p>Area (A) = b X h</p>
+              <input type="number" placeholder="Give the base here..." class="border-2 border-fuchsia-700">
+              <input type="number" placeholder="Give the hight here..." class="border-2 border-fuchsia-700">
+              <p>Area: </p>
               <div class="card-actions justify-end">
-                <button class="btn btn-primary">Calculate Area</button>
+                <button class="btn btn-info bg-blue-400 p-2 rounded-xl font-bold">Calculate Area</button>
               </div>
             </div>
           </div>
 <!--Rhombus-->
-<div class="card bg-base-100 image-full w-96 shadow-xl bg-red-100 border-2 border-red-600">
+<div class="card bg-base-100 image-full w-auto shadow-xl bg-red-100 border-2 border-red-600">
     <figure>
       <img
         src="images/rhombus.png"
@@ -93,14 +103,17 @@
     </figure>
     <div class="card-body">
       <h2 class="card-title">Rhombus!</h2>
-      <p>Area (A) = (p * q) / 2</p>
+      <p>Area (A) = A = ½ (p X q)</p>
+      <input type="number" placeholder="Give the diagonal-1 here..." class="border-2 border-fuchsia-700">
+      <input type="number" placeholder="Give the diagonal-2 here..." class="border-2 border-fuchsia-700">
+      <p>Area: </p>
       <div class="card-actions justify-end">
-        <button class="btn btn-primary">Calculate Area</button>
+        <button class="btn btn-info bg-blue-400 p-2 rounded-xl font-bold">Calculate Area</button>
       </div>
     </div>
   </div>
   <!--Pentagon-->
-          <div class="card bg-base-100 image-full w-96 shadow-xl bg-red-100 border-2 border-red-600">
+          <div class="card bg-base-100 image-full w-auto shadow-xl bg-red-100 border-2 border-red-600">
             <figure>
               <img
                 src="/images/pentagon.png"
@@ -108,14 +121,17 @@
             </figure>
             <div class="card-body">
               <h2 class="card-title">Pentagon!</h2>
-              <p>Area (A) = 0.5 * (p * a)</p>
+              <p>Area (A) = A = ½ (p X a)</p>
+              <input type="number" placeholder="Give the perimeter here..." class="border-2 border-fuchsia-700">
+              <input type="number" placeholder="Give the apothem here..." class="border-2 border-fuchsia-700">
+              <p>Area: </p>
               <div class="card-actions justify-end">
-                <button class="btn btn-primary">Calculate Area</button>
+                <button class="btn btn-info bg-blue-400 p-2 rounded-xl font-bold">Calculate Area</button>
               </div>
             </div>
           </div>
   <!--Ellipse-->
-          <div class="card bg-base-100 image-full w-96 shadow-xl bg-red-100 border-2 border-red-600">
+          <div class="card bg-base-100 image-full w-auto shadow-xl bg-red-100 border-2 border-red-600">
             <figure>
               <img
                 src="/images/ellipse.png"
@@ -123,14 +139,17 @@
             </figure>
             <div class="card-body">
               <h2 class="card-title">Ellipse!</h2>
-              <p>Area (A) = π * a * b</p>
+              <p>Area (A) = π a b</p>
+              <input type="number" placeholder="Give the major axis here..." class="border-2 border-fuchsia-700">
+              <input type="number" placeholder="Give the minor axis here..." class="border-2 border-fuchsia-700">
+              <p>Area: </p>
               <div class="card-actions justify-end">
-                <button class="btn btn-primary">Calculate Area</button>
+                <button class="btn btn-info bg-blue-400 p-2 rounded-xl font-bold">Calculate Area</button>
               </div>
             </div>
           </div>
             <!--Hexagon-->
-            <div class="card bg-base-100 image-full w-96 shadow-xl bg-red-100 border-2 border-red-600">
+            <div class="card bg-base-100 image-full w-auto shadow-xl bg-red-100 border-2 border-red-600">
                 <figure>
                   <img
                     src="/images/hexagon..png"
@@ -138,14 +157,16 @@
                 </figure>
                 <div class="card-body">
                   <h2 class="card-title">Hexagon!</h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <p>Area (A) = A = ½ (3 X 1.7321) X a ^ 2 </p>
+                  <input type="number" placeholder="Give the side value here..." class="border-2 border-fuchsia-700">
+                  <p>Area: </p>
                   <div class="card-actions justify-end">
-                    <button class="btn btn-primary">Calculate Area</button>
+                    <button class="btn btn-info bg-blue-400 p-2 rounded-xl font-bold">Calculate Area</button>
                   </div>
                 </div>
               </div>
                           <!--Trapezium-->
-            <div class="card bg-base-100 image-full w-96 shadow-xl bg-red-100 border-2 border-red-600">
+            <div class="card bg-base-100 image-full w-auto shadow-xl bg-red-100 border-2 border-red-600">
                 <figure>
                   <img
                     src="/images/trapezium.png"
@@ -153,9 +174,13 @@
                 </figure>
                 <div class="card-body">
                   <h2 class="card-title">Trapezium!</h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <p>A = ½ (a + b) h</p>
+                  <input type="number" placeholder="Give the short base here..." class="border-2 border-fuchsia-700">
+                  <input type="number" placeholder="Give the long base axis here..." class="border-2 border-fuchsia-700">
+                  <input type="number" placeholder="Give the hight here..." class="border-2 border-fuchsia-700 m-2">
+                  <p>Area: </p>
                   <div class="card-actions justify-end">
-                    <button class="btn btn-primary">Calculate Area</button>
+                    <button class="btn btn-info bg-blue-400 p-2 rounded-xl font-bold">Calculate Area</button>
                   </div>
                 </div>
               </div>
@@ -163,7 +188,9 @@
     <div id="area-part">
         <h3>bye</h3>
     </div>
+  </main>
 
+  <script src="/geometry.js">JAVA Script</script>
 </body>
 
 </html>
