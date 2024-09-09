@@ -72,34 +72,34 @@ document.getElementById('rhombus-btn').addEventListener('click',function rhombus
     const rhombusText = setElementValues('rhombus-text', area);
 })
 
-// -----button
-document.getElementById('s-btn').addEventListener('click',function s(){
-    const sInput = getElementValues('s-p');
-    const sInputQ = getElementValues('s-q');
-    const area = ( sInputP * sInputQ );
-    const sText = setElementValues('s-text', area);
+//Pentagon button
+document.getElementById('pentagon-btn').addEventListener('click',function pentagon(){
+    const pentagonInputP = getElementValues('pentagon-p');
+    const pentagonInputA = getElementValues('pentagon-a');
+    const area = ( 0.5 * pentagonInputP * pentagonInputA );
+    const pentagonText = setElementValues('pentagon-text', area);
 })
 
-// -----button
-document.getElementById('s-btn').addEventListener('click',function s(){
-    const sInput = getElementValues('s-p');
-    const sInputQ = getElementValues('s-q');
-    const area = ( sInputP * sInputQ );
-    const sText = setElementValues('s-text', area);
+// Ellipse button
+document.getElementById('ellipse-btn').addEventListener('click',function ellipse(){
+    const ellipseInputA = getElementValues('ellipse-a');
+    const ellipseInputB = getElementValues('ellipse-b');
+    const area = ( 3.1416 * ellipseInputA * ellipseInputB );
+    const ellipseText = setElementValues('ellipse-text', area);
 })
 
-// -----button
-document.getElementById('s-btn').addEventListener('click',function s(){
-    const sInput = getElementValues('s-p');
-    const sInputQ = getElementValues('s-q');
-    const area = ( sInputP * sInputQ );
-    const sText = setElementValues('s-text', area);
+// Hexagon button
+document.getElementById('hexagon-btn').addEventListener('click',function hexagon(){
+    const hexagonInput = getElementValues('hexagon-a');
+    const area = ( 0.5 * 3 * 1.7321 * hexagonInput * hexagonInput );
+    const hexagonText = setElementValues('hexagon-text', area);
 })
 
-// -----button
-document.getElementById('s-btn').addEventListener('click',function s(){
-    const sInput = getElementValues('s-p');
-    const sInputQ = getElementValues('s-q');
-    const area = ( sInputP * sInputQ );
-    const sText = setElementValues('s-text', area);
+// Trapezium button
+document.getElementById('trapezium-btn').addEventListener('click',function trapezium(){
+    const trapeziumInputA = getElementValues('trapezium-a');
+    const trapeziumInputB = getElementValues('trapezium-b');
+    const trapeziumInputH = getElementValues('trapezium-h');
+    const area = ( 0.5 * trapeziumInputH * (trapeziumInputA + trapeziumInputB) );
+    const trapeziumText = setElementValues('trapezium-text', area);
 })
