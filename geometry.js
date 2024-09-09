@@ -49,4 +49,57 @@ document.getElementById('circle-btn').addEventListener('click',function circle()
 })
 
 //Rectangles & Square button
-document.getElementById('')
+document.getElementById('rectangle-btn').addEventListener('click',function rectangle(){
+    const rectangleInputW = getElementValues('rectangle-w');
+    const rectangleInputL = getElementValues('rectangle-l');
+    const area = (rectangleInputW * rectangleInputL);
+    const rectangleText = setElementValues('rectangle-text', area);
+})
+
+//parallelogram button
+document.getElementById('parallelogram-btn').addEventListener('click',function parallelogram(){
+    const parallelogramInputB = getElementValues('parallelogram-base');
+    const parallelogramInputH = getElementValues('parallelogram-hight');
+    const area = ( parallelogramInputB * parallelogramInputH );
+    const parallelogramText = setElementValues('parallelogram-text', area);
+})
+
+//Rhombus button
+document.getElementById('rhombus-btn').addEventListener('click',function rhombus(){
+    const rhombusInputP = getElementValues('rhombus-p');
+    const rhombusInputQ = getElementValues('rhombus-q');
+    const area = ( rhombusInputP * rhombusInputQ );
+    const rhombusText = setElementValues('rhombus-text', area);
+})
+
+// -----button
+document.getElementById('s-btn').addEventListener('click',function s(){
+    const sInput = getElementValues('s-p');
+    const sInputQ = getElementValues('s-q');
+    const area = ( sInputP * sInputQ );
+    const sText = setElementValues('s-text', area);
+})
+
+// -----button
+document.getElementById('s-btn').addEventListener('click',function s(){
+    const sInput = getElementValues('s-p');
+    const sInputQ = getElementValues('s-q');
+    const area = ( sInputP * sInputQ );
+    const sText = setElementValues('s-text', area);
+})
+
+// -----button
+document.getElementById('s-btn').addEventListener('click',function s(){
+    const sInput = getElementValues('s-p');
+    const sInputQ = getElementValues('s-q');
+    const area = ( sInputP * sInputQ );
+    const sText = setElementValues('s-text', area);
+})
+
+// -----button
+document.getElementById('s-btn').addEventListener('click',function s(){
+    const sInput = getElementValues('s-p');
+    const sInputQ = getElementValues('s-q');
+    const area = ( sInputP * sInputQ );
+    const sText = setElementValues('s-text', area);
+})
