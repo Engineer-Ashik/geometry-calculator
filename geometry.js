@@ -14,8 +14,15 @@ document.getElementById('triangle-btn').addEventListener('click', function trian
     const triInTwoValue = triInTwo.value;
     const triInTwoValueParse = parseFloat(triInTwoValue);
     triInTwo.value = "";
-    const area = (0.5 * triInOneValueParse * triInTwoValueParse);
-    console.log(area);
+
+    if(triInOneValue >= 0 && triInTwoValue >= 0){
+        const area = (0.5 * triInOneValueParse * triInTwoValueParse);
+        console.log(area);    
+    }
+    else {
+        alert('Please Enter A Valid Input');
+    }
+
 
     const triText = document.getElementById('tri-text');
     const triTextValue = triText.innerText;
@@ -44,55 +51,83 @@ function setElementValues(elementId, values) {
 //circle button
 document.getElementById('circle-btn').addEventListener('click',function circle(){
     const circleInput = getElementValues('circle-x');
+    if( circleInput >= 0){
     const area = (3.1416 * circleInput * circleInput);
-    const circleText = setElementValues('circle-text', area);
+    const circleText = setElementValues('circle-text', area);}
+    else{
+        alert('Please Enter A Valid Input');
+    }
 })
 
 //Rectangles & Square button
 document.getElementById('rectangle-btn').addEventListener('click',function rectangle(){
     const rectangleInputW = getElementValues('rectangle-w');
     const rectangleInputL = getElementValues('rectangle-l');
+    if( rectangleInputW >= 0 && rectangleInputL >= 0){
     const area = (rectangleInputW * rectangleInputL);
-    const rectangleText = setElementValues('rectangle-text', area);
+    const rectangleText = setElementValues('rectangle-text', area);}
+    else{
+        alert('Please Enter A Valid Input');
+    }
 })
 
 //parallelogram button
 document.getElementById('parallelogram-btn').addEventListener('click',function parallelogram(){
     const parallelogramInputB = getElementValues('parallelogram-base');
     const parallelogramInputH = getElementValues('parallelogram-hight');
+    if( parallelogramInputB >= 0 && parallelogramInputH >= 0 ){
     const area = ( parallelogramInputB * parallelogramInputH );
-    const parallelogramText = setElementValues('parallelogram-text', area);
+    const parallelogramText = setElementValues('parallelogram-text', area);}
+    else{
+        alert('Please Enter A Valid Input');
+    }
 })
 
 //Rhombus button
 document.getElementById('rhombus-btn').addEventListener('click',function rhombus(){
     const rhombusInputP = getElementValues('rhombus-p');
     const rhombusInputQ = getElementValues('rhombus-q');
+    if( rhombusInputP >= 0 && rhombusInputQ >= 0 ){
     const area = ( rhombusInputP * rhombusInputQ );
-    const rhombusText = setElementValues('rhombus-text', area);
+    const rhombusText = setElementValues('rhombus-text', area);}
+    else{
+        alert('Please Enter A Valid Input');
+    }
 })
 
 //Pentagon button
 document.getElementById('pentagon-btn').addEventListener('click',function pentagon(){
     const pentagonInputP = getElementValues('pentagon-p');
     const pentagonInputA = getElementValues('pentagon-a');
+    if( pentagonInputA >= 0 && pentagonInputP >= 0){
     const area = ( 0.5 * pentagonInputP * pentagonInputA );
-    const pentagonText = setElementValues('pentagon-text', area);
+    const pentagonText = setElementValues('pentagon-text', area);}
+    else{
+        alert('Please Enter A Valid Input');
+    }
 })
 
 // Ellipse button
 document.getElementById('ellipse-btn').addEventListener('click',function ellipse(){
     const ellipseInputA = getElementValues('ellipse-a');
     const ellipseInputB = getElementValues('ellipse-b');
+    if( ellipseInputA >= 0 && ellipseInputB >= 0 ){
     const area = ( 3.1416 * ellipseInputA * ellipseInputB );
-    const ellipseText = setElementValues('ellipse-text', area);
+    const ellipseText = setElementValues('ellipse-text', area);}
+    else{
+        alert('Please Enter A Valid Input');
+    }
 })
 
 // Hexagon button
 document.getElementById('hexagon-btn').addEventListener('click',function hexagon(){
     const hexagonInput = getElementValues('hexagon-a');
+    if( hexagonInput >= 0 ){
     const area = ( 0.5 * 3 * 1.7321 * hexagonInput * hexagonInput );
-    const hexagonText = setElementValues('hexagon-text', area);
+    const hexagonText = setElementValues('hexagon-text', area);}
+    else{
+        alert('Please Enter A Valid Input');
+    }
 })
 
 // Trapezium button
@@ -100,6 +135,10 @@ document.getElementById('trapezium-btn').addEventListener('click',function trape
     const trapeziumInputA = getElementValues('trapezium-a');
     const trapeziumInputB = getElementValues('trapezium-b');
     const trapeziumInputH = getElementValues('trapezium-h');
-    const area = ( 0.5 * trapeziumInputH * (trapeziumInputA + trapeziumInputB) );
-    const trapeziumText = setElementValues('trapezium-text', area);
+    if( trapeziumInputA >= 0 && trapeziumInputB >= 0 && trapeziumInputH >=0 ){
+    const area = ( 0.5 * trapeziumInputH * (trapeziumInputA + trapeziumInputB));
+    const trapeziumText = setElementValues('trapezium-text', area);}
+    else{
+        alert('Please Enter A Valid Input');
+    }
 })
