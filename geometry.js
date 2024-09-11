@@ -25,7 +25,7 @@ function addToCalculationEntry(areaType, area){
     const counting = calculationEntry.childElementCount;
 
     const paragraph = document.createElement('p');
-    paragraph.innerHTML = counting+1 + ' ' + areaType + ' ' + area + 'cm<sup>2</sup>'; // `${areaType} ${area} cm<sup>2</sup> <button class="btn btn-sm btn-success">Meter</button>`
+    paragraph.innerHTML = counting+1 + '-' + ' ' + areaType + ' ' + area + 'cm<sup>2</sup>'; // `${areaType} ${area} cm<sup>2</sup> <button class="btn btn-sm btn-success">Meter</button>`
     calculationEntry.appendChild(paragraph);
 }
 
