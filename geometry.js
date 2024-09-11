@@ -48,12 +48,26 @@ function setElementValues(elementId, values) {
     setElement.innerText = values;
 }
 
+//Extra Area Calculation list 
+function addToCalculationEntry(areaType, area ){
+    console.log('Added calculationEntry Function now....');
+    console.log(areaType + ' '+ area);
+    const calculationEntry = document.getElementById('calculation-entry'); // id of area section div
+    const counting = calculationEntry.childElementCount;
+
+    const paragraph = document.createElement('p');
+    paragraph.innerHTML = counting+1 + ' ' + areaType + ' ' + area + 'cm<sup>2</sup>'; // `${areaType} ${area} cm<sup>2</sup> <button class="btn btn-sm btn-success">Meter</button>`
+    calculationEntry.appendChild(paragraph);
+
+}
+
 //circle button
 document.getElementById('circle-btn').addEventListener('click',function circle(){
     const circleInput = getElementValues('circle-x');
     if( circleInput >= 0){
     const area = (3.1416 * circleInput * circleInput);
-    const circleText = setElementValues('circle-text', area);}
+    const circleText = setElementValues('circle-text', area);
+    addToCalculationEntry('CIRCLE' ,area);}
     else{
         alert('Please Enter A Valid Input');
     }
